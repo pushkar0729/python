@@ -1,0 +1,13 @@
+def age_calc(birthyear):
+  currentyear=2023
+  if birthyear>currentyear:
+    raise valueError("invalid value")
+  else:
+    print("your age is",currentyear-birthyear)
+
+try:
+  year=int(input("enter ur age:"))
+  print("ur age is",age_calc(year))
+except:
+  print("invalid syntax")
+  
